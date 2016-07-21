@@ -52,7 +52,7 @@ var DEFAULT_INITIAL_ROWS = 10;
 var DEFAULT_SCROLL_RENDER_AHEAD = 1000;
 var DEFAULT_END_REACHED_THRESHOLD = 1000;
 var DEFAULT_SCROLL_CALLBACK_THROTTLE = 50;
-
+renderSectionHeader
 
 /**
  * ListView - A core component designed for efficient display of vertically
@@ -193,6 +193,7 @@ var ListView = React.createClass({
      * section until it reaches the top of the screen, at which point it will
      * stick to the top until it is pushed off the screen by the next section
      * header.
+     * @platform ios
      */
     renderSectionHeader: PropTypes.func,
     /**
